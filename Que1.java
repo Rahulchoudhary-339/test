@@ -27,7 +27,6 @@ class Oddeven {
             }
         }
         d = a + b + c;
-        //System.out.println("total"+d);
         while(d!=0){
             digit = digit + (d % 10);
             d = d / 10;
@@ -41,8 +40,6 @@ class Oddeven {
         }
         System.out.println("Your final answer is:"+digit);
             }
-
-
     }
 
 public class Que1 {
@@ -50,9 +47,6 @@ public class Que1 {
         Oddeven ob =new Oddeven();
         ob.userInput();
         ob.Process();
-
     }
-
-
-    }
+                   }
 
