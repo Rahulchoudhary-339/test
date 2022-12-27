@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+ class rpp {
+    int amount;
+
+    void members() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter your number of person here which age less then 3 years \n per person ticket amount = free");
+        int a = sc.nextInt();
+        amount = a * 0;
+
+        System.out.println("enter your number of person here which age between 3 to 12 years\n  per person ticket amount =100 ");
+        int b = sc.nextInt();
+        amount = amount + (b * 100);
+
+        System.out.println("enter your number of person here witch age greater then 12 year\n per person ticket amount = 150 ");
+        int c = sc.nextInt();
+        amount = amount + (c * 150);
+
+        int d = a + b + c;
+        System.out.println("total number of persons = " + d + " \n total amount of tickets = " + amount);
+    }
+}
+public class Delete{
+    public static void main(String[] args) {
+        rpp ob =new rpp();
+        ob.members();
+
+    }
+}
