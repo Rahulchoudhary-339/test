@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+
+class Myclass {
+    int i = 0;
+    Scanner sc = new Scanner(System.in);
+
+    String userInput() {
+        System.out.println("Enter your String:");
+        return sc.nextLine();
+    }
+
+
+    void removeSpace() {
+        String str = userInput();
+        StringBuffer ch = new StringBuffer();
+        for (char s : str.toCharArray()) {
+
+            if (s != ' ') {
+                ch.append(s);
+            }
+        }
+        System.out.println(ch.toString());
+
+    }
+}
+public class String_test {
+    public static void main(String[] args) {
+        Myclass ob =new Myclass();
+        ob.removeSpace();
+    }
+}
